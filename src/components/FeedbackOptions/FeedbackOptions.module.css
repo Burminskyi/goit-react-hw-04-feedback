@@ -1,0 +1,15 @@
+.btnWrap {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+.btn {
+  width: 70px;
+  cursor: pointer;
+  &:hover {
+    scale: 1.1;
+    background-color: greenyellow;
+    border: 1px solid black;
+    border-radius: 5%;
+  }
+}
