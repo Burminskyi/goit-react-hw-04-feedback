@@ -17,18 +17,35 @@ export const App = () => {
   };
 
   const handleBtnClick = e => {
-    if (e.target.name === 'good') {
-      setGood(good + 1);
-      return;
+    switch (e.target.name) {
+      case 'good':
+        setGood(good + 1);
+        break;
+
+      case 'neutral':
+        setNeutral(neutral + 1);
+        break;
+
+      case 'bad':
+        setBad(bad + 1);
+        break;
+
+      default:
+        console.log('Invalid button name');
     }
-    if (e.target.name === 'neutral') {
-      setNeutral(neutral + 1);
-      return;
-    }
-    if (e.target.name === 'bad') {
-      setBad(bad + 1);
-      return;
-    }
+
+    // if (e.target.name === 'good') {
+    //   setGood(good + 1);
+    //   return;
+    // }
+    // if (e.target.name === 'neutral') {
+    //   setNeutral(neutral + 1);
+    //   return;
+    // }
+    // if (e.target.name === 'bad') {
+    //   setBad(bad + 1);
+    //   return;
+    // }
   };
 
   return (
